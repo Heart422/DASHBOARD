@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="web.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Desarrollos - Henry Alejandro Rozo T</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #222;
+        }
+        header {
+            background: #1a237e;
+            color: #fff;
+            padding: 2rem 1rem 1rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            color: #c5cae9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .project {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(30, 34, 90, 0.08);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: box-shadow 0.2s;
+        }
+        .project:hover {
+            box-shadow: 0 6px 24px rgba(30, 34, 90, 0.18);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .project h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.3rem;
+            color: #1a237e;
+        }
+        .project p {
+            flex: 1;
+            margin: 0 0 1rem 0;
+        }
+        .project a {
+            background: #3949ab;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .project a:hover {
+            background: #283593;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+            color: #888;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .container { padding: 0 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Henry Alejandro Rozo T</h1>
+        <p>Desarrollador | Innovador | Soluciones a tu medida</p>
+    </header>
+    <div class="container">
+        <h2>Mis Desarrollos</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="monitor.ico" alt="Monitor" style="width:64px;height:64px;margin-bottom:1rem;">
+                <h2>Monitor</h2>
+                <p>Tablero Kanban interactivo para gestión de tareas y proyectos. Visualiza y organiza tu flujo de trabajo.</p>
+                <a href="https://heart422.github.io/MONITOR/" target="_blank">Ver más</a>
+            </div>
+            <div class="project">
+                <img src="Kamban.ico" alt="Kamban" style="width:64px;height:64px;margin-bottom:1rem;">
+                <h2>Kamban</h2>
+                <p>Tablero Kanban interactivo para gestión de tareas y proyectos. Visualiza y organiza tu flujo de trabajo.</p>
+                <a href="https://heart422.github.io/MONITOR/Kamban.html" target="_blank">Ver más</a>
+            </div>
+            <div class="project">
+                <img src="mentes_brillantes.ico" alt="Mentes Brillantes" style="width:64px;height:64px;margin-bottom:1rem;">
+                <h2>Mentes Brillantes</h2>
+                <p>Plataforma educativa para potenciar el aprendizaje y la creatividad. Recursos y actividades para mentes inquietas.</p>
+                <a href="https://despertando-ideas.web.app/MentesBrillantes.html" target="_blank">Ver más</a>
+            </div>
+            <div class="project">
+                <img src="heart_web.ico" alt="Heart Web" style="width:64px;height:64px;margin-bottom:1rem;">
+                <h2>Heart Web</h2>
+                <p>Web personal/profesional con información, servicios y contacto. Diseño moderno y adaptable.</p>
+                <a href="https://proyect593.github.io/heart-web/" target="_blank">Ver más</a>
+            </div>
+            <div class="project">
+                <img src="tvs.ico" alt="TVS" style="width:64px;height:64px;margin-bottom:1rem;">
+                <h2>TVS Plataforma</h2>
+                <p>Solución web para visualización y gestión de contenidos multimedia. Interfaz intuitiva y eficiente.</p>
+                <a href="https://heart422.github.io/TVS/" target="_blank">Ver más</a>
+            </div>
+            <div class="project">
+                <img src="contable.ico" alt="Página Contable" style="width:64px;height:64px;margin-bottom:1rem;">
+                <h2>Página Contable</h2>
+                <p>Herramienta para gestión contable y financiera. Automatiza procesos y mejora la organización de tus finanzas.</p>
+                <a href="https://heart422.github.io/Pagina-contable/index.html" target="_blank">Ver más</a>
+            </div>
+            <!-- Aquí se podrá agregar el enlace de descarga de la app de escritorio más adelante -->
+            <div class="project">
+                <img src="heart_app.ico" alt="App de Escritorio HEART" style="width:64px;height:64px;margin-bottom:1rem;">
+                <h2>Aplicación de Escritorio HEART</h2>
+                <p>Descarga la versión empaquetada de mi aplicación de escritorio. Ideal para gestión y productividad en Windows.</p>
+                <a href="../HEART.zip" download style="background: #43a047;">Descargar</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 Henry Alejandro Rozo T &mdash; ¿Te interesa alguno? <a href="mailto:tuemail@ejemplo.com">Contáctame</a>
+    </footer>
+</body>
+</html>
